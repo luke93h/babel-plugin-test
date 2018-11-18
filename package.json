@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "babel src -d lib"
+    "build": "babel --no-babelrc src -d lib --presets=env",
+    "test": "babel test -d output"
   },
   "author": "",
   "license": "ISC",
